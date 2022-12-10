@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "parcel build src/pages/index.hbs",
-    "start": "parcel src/pages/index.hbs && node ./server.js --no-cache"
+    "build": "parcel build src/pages/index.hbs --no-cache",
+    "start": "npm run build && node ./server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
+    "engine-version": "^1.0.2",
     "handlebars": "^4.7.7",
     "parcel": "^2.8.0",
     "postcss-import": "^15.1.0"

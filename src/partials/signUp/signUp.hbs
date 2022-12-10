@@ -1,11 +1,13 @@
 <h1 class="popup__title">Регистрация</h1>
-{{> 'input/input' type="email" name="mail" label="Почта"}}
-{{> 'input/input' type="text" name="login" label="Логин"}}
-{{> 'input/input' type="text" name="firstName" label="Имя"}}
-{{> 'input/input' type="text" name="lastName" label="Фамилия"}}
-{{> 'input/input' type="tel" name="phoneNumber" label="Телефон"}}
-{{> 'input/input' type="password" name="password" label="Пароль"}}
-{{> 'input/input' type="password" name="password1" label="Пароль (еще раз)"}}
-<p class="popup__error">Пароли не совпадают</p>
+<ul class="popup__list">
+  <li>{{> 'input/input' type="email" name="mail" label="Почта"}}</li>
+  <li>{{> 'input/input' type="text" name="login" label="Логин"}}</li>
+  <li>{{> 'input/input' type="text" name="firstName" label="Имя"}}</li>
+  <li>{{> 'input/input' type="text" name="lastName" label="Фамилия"}}</li>
+  <li>{{> 'input/input' type="tel" name="phoneNumber" label="Телефон"}}</li>
+  <li>{{> 'input/input' type="password" name="password" label="Пароль"}}</li>
+  <li>{{> 'input/input' type="password" name="password1" label="Пароль (еще раз)"}}
+    <p class="popup__error">Пароли не совпадают</p></li>
+</ul>
 {{> 'button/button' text="Зарегистрироваться"}}
 <a href="./main.hbs" class="popup__link">Войти</a>

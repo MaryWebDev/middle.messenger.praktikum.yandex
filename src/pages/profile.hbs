@@ -1,0 +1,45 @@
+---
+name: Mary
+---
+{{!< base/base}}
+
+<section class="profile">
+  <div class="overlay">
+    {{> modal/modal title="Загрузите файл"}}
+  </div>
+  <nav class="nav">
+    <div class="nav__control">
+      <p class="nav__control_type_prev">&larr;</p>
+    </div>
+  </nav>
+  <div class="content">
+    {{> icon/icon}}
+    <div class="data">
+      <ul>
+        <li>{{> info/info disabled=true type="email" name="Почта" value="pochta@ya.ru"}}</li>
+        <li>{{> info/info disabled=true type="text" name="Логин" value="MaryWD"}}</li>
+        <li>{{> info/info disabled=true type="text" name="Имя" value="Mary"}}</li>
+        <li>{{> info/info disabled=true type="text" name="Фамилия" value="I"}}</li>
+        <li>{{> info/info disabled=true type="text" name="Имя в чате" value="MaryWD"}}</li>
+        <li>{{> info/info disabled=true type="tel" name="Телефон" value="+7 (903) 594 0404"}}</li>
+      </ul>
+      <ul>
+        <li>
+          <div class="row">
+            <a href="./edit_profile.hbs" class="link">Изменить данные</a>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <a href="./edit_password.hbs" class="link">Изменить пароль</a>
+          </div>
+        </li>
+        <li>
+          <div class="row">
+            <a href="#" class="link link_exit">Выйти</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
