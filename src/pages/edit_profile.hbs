@@ -1,0 +1,23 @@
+{{!< base/base}}
+
+<section class="profile">
+  <nav class="nav">
+    <div class="nav__control">
+      <p class="nav__control_type_prev">&larr;</p>
+    </div>
+  </nav>
+  <div class="content">
+    {{> icon/icon}}
+    <div class="data">
+      <ul>
+        <li>{{> info/info type="email" name="Почта" value="pochta@ya.ru"}}</li>
+        <li>{{> info/info type="text" name="Логин" value="MaryWD"}}</li>
+        <li>{{> info/info type="text" name="Имя" value="Mary"}}</li>
+        <li>{{> info/info type="text" name="Фамилия" value="I"}}</li>
+        <li>{{> info/info type="text" name="Имя в чате" value="MaryWD"}}</li>
+        <li>{{> info/info type="tel" name="Телефон" value="+7 (903) 594 0404"}}</li>
+      </ul>
+      {{> button/button text="Сохранить"}}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+.stub {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stub__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 160px;
+    text-align: center;
+    color: #1E1E1E;
+}
+
+.stub__prev {
+    font-size: 11px;
+    color: #3369F3;
+}
+
+.stub__title {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.stub__text {
+    margin-bottom: 20px;
+    font-size: 20px;
+}

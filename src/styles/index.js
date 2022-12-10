@@ -1,4 +1,10 @@
 import '../layouts/base/base.css';
 import '../layouts/form/form.css';
 import '../partials/input/input.css';
+import '../partials/signUp/signUp.css';
 import '../partials/button/button.css';
+import '../partials/icon/icon.css';
+import '../partials/info/info.css';
+import '../partials/modal/modal.css';
+import '../partials/stub/stub.css';
+import '../pages/profile.css';
