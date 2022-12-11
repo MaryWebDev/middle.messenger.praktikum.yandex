@@ -10,8 +10,8 @@
     font-size: 15px;
     line-height: 20px;
     text-align: center;
-    color: #1E1E1E;
-    background: #FFFFFF;
+    color: var(--text-dark-color);
+    background: var(--btn-text-color);
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.14);
     border-radius: 12px;
 }
@@ -20,7 +20,7 @@
     font-size: 15px;
     line-height: 20px;
     text-align: center;
-    color: #1E1E1E;
+    color: var(--text-dark-color);
 }
 
 .modal__text {
@@ -29,6 +29,6 @@
     line-height: 16px;
     text-align: center;
     text-decoration-line: underline;
-    color: #3369F3;
+    color: var(--basic-theme-color);
     cursor: pointer;
 }
