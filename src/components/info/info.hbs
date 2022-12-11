@@ -1,0 +1,8 @@
+<div class="row">
+  <p class="row__name">{{field}}</p>
+  {{#if disabled}}
+    <input type={{type}} name={{name}} class="row__value" disabled value="{{value}}">
+  {{else}}
+    <input type={{type}} name={{name}} class="row__value" value="{{value}}" placeholder={{placeholder}}>
+  {{/if}}
+</div>

@@ -13,12 +13,12 @@
     width: 180px;
     height: 160px;
     text-align: center;
-    color: #1E1E1E;
+    color: var(--text-dark-color);
 }
 
 .stub__prev {
     font-size: 11px;
-    color: #3369F3;
+    color: var(--basic-theme-color);
 }
 
 .stub__title {

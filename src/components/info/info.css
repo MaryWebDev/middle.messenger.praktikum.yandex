@@ -11,12 +11,12 @@
     font-size: 13px;
 }
 .row__name {
-    color: #1E1E1E;
+    color: var(--text-dark-color);
 }
 
 .row__value {
     background-color: inherit;
-    color: #999999;
+    color: var(--main-color);
     text-align: right;
     display: block;
     padding: 0 0 5px;

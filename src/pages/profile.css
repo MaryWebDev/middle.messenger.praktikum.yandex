@@ -8,12 +8,12 @@
 }
 
 .link {
-    color: #3369F3;
+    color: var(--basic-theme-color);
     text-decoration-line: none;
 }
 
 .link_exit {
-    color: #FF0000;
+    color: var(--text-another-color);
 }
 
 .profile {
@@ -38,7 +38,7 @@
     height: 28px;
     background-color: #3369F3;
     border-radius: 50%;
-    color: #FFFFFF;
+    color: var(--btn-text-color);
     cursor: pointer;
 }
 
