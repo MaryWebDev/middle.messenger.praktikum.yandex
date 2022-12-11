@@ -9,6 +9,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines" : {
+    "node" : ">=12"
+  },
   "devDependencies": {
     "@anikin/parcel-transformer-handlebars": "^1.0.9",
     "engine-version": "^1.0.2",
