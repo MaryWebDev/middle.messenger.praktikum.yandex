@@ -1,0 +1,13 @@
+<h1 class="popup__title">Регистрация</h1>
+<ul class="popup__list">
+  <li>{{> 'input/input' type="email" name="email" label="Почта"}}</li>
+  <li>{{> 'input/input' type="text" name="login" label="Логин"}}</li>
+  <li>{{> 'input/input' type="text" name="first_name" label="Имя"}}</li>
+  <li>{{> 'input/input' type="text" name="last_name" label="Фамилия"}}</li>
+  <li>{{> 'input/input' type="tel" name="phone" label="Телефон"}}</li>
+  <li>{{> 'input/input' type="password" name="password" label="Пароль"}}</li>
+  <li>{{> 'input/input' type="password" name="password" label="Пароль (еще раз)"}}
+    <p class="popup__error">Пароли не совпадают</p></li>
+</ul>
+{{> 'button/button' text="Зарегистрироваться"}}
+<a href="./main.hbs" class="popup__link">Войти</a>

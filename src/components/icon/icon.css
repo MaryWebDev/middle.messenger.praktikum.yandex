@@ -1,0 +1,59 @@
+.icon {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 130px;
+    height: 167px;
+}
+
+.icon__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: #EFEFEF;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.icon__container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 130px;
+    height: 130px;
+}
+
+.icon__container:hover:before {
+    background: #000000;
+    opacity: 0.5;
+}
+
+.icon__container:hover .icon__text {
+    display: block;
+}
+
+.icon__name {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: var(--text-dark-color);
+}
+
+.icon__text {
+    display: none;
+    width: 64px;
+    position: absolute;
+    left: 25%;
+    top: 40%;
+    color: var(--btn-text-color);
+    font-size: 13px;
+    line-height: 14px;
+    text-align: center;
+}

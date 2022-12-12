@@ -1,0 +1,24 @@
+.popup__text {
+    margin-top: 16px;
+    font-size: 9px;
+    color: var(--main-color);
+}
+
+.popup__input {
+    padding: 7px 0;
+    border-bottom: 1px solid var(--basic-theme-color);
+    outline: none;
+}
+
+.popup__input_error {
+    color: var(--text-another-color);
+}
+
+.popup__input::placeholder {
+    font-size: 13px;
+    color: var(--main-color);
+}
+
+.popup__text:has(+ .popup__input:placeholder-shown) {
+    visibility: hidden;
+}

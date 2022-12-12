@@ -1,0 +1,10 @@
+.popup__btn {
+    width: 280px;
+    padding: 12px 0;
+    background: var(--basic-theme-color);
+    border-radius: 8px;
+    font-size: 13px;
+    text-align: center;
+    color: var(--btn-text-color);
+    cursor: pointer;
+}
