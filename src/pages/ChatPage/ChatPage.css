@@ -1,0 +1,119 @@
+.chats {
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    font-family: 'Inter', 'Arial', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--main-color);
+    font-size: 12px;
+}
+
+.chat {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    color: var(--main-color);
+}
+
+.chat-wrapper {
+    min-width: 310px;
+    height: 100vh;
+    border-right: 1px solid var(--line-color);
+    background-color: var(--bg-color-light);
+}
+
+.profile-link {
+    margin: 15px 15px 0 15px;
+    height: 36px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.profile-link p {
+    cursor: pointer;
+}
+
+.search {
+    margin: 10px;
+    height: 32px;
+    width: calc(100% - 20px);
+    text-align: center;
+    background: var(--bg-color);
+    border-radius: 5px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.chat-list {
+    margin: 10px 0;
+    border-top: 1px solid var(--line-color);
+}
+
+.chats__item {
+    height: 71px;
+    display: flex;
+    padding: 12px 10px;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid var(--line-color);
+    cursor: pointer;
+}
+
+.chats__item-avatar {
+    flex-shrink: 0;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background-color: var(--bg-color);
+}
+
+.chats__item-preview {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chats__item-contact {
+    font-weight: 600;
+    font-size: 13px;
+    color: var(--text-dark-color);
+}
+
+.chats__item-time {
+    font-size: 9px;
+    line-height: 13px;
+    color: var(--main-color);
+}
+
+.chats__item-count {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: var(--basic-theme-color);
+    font-size: 11px;
+    color: var(--btn-text-color);
+}
+
+.chats__item-contact {
+    margin: 4px 0;
+}
+
+.chats__item-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chats__sender {
+    color: var(--text-dark-color)
+}

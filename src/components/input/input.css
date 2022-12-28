@@ -1,5 +1,4 @@
 .popup__text {
-    margin-top: 16px;
     font-size: 9px;
     color: var(--main-color);
 }
@@ -21,4 +20,22 @@
 
 .popup__text:has(+ .popup__input:placeholder-shown) {
     visibility: hidden;
+}
+
+.popup__row {
+    display: flex;
+    flex-direction: column;
+}
+
+.popup__row:focus {
+    outline: none;
+}
+
+.popup__error {
+    height: 9px;
+    display: block;
+    margin-top: 7px;
+    font-weight: 400;
+    font-size: 8px;
+    color: var(--text-another-color);
 }
