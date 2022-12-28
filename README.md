@@ -21,4 +21,4 @@ https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3
 Также в проекте исплозуется PostCSS, сервер на Node.js (Express). Деплой проекта доступен на Netlify.
 
 ## PR
-[№1](https://github.com/MaryWebDev/middle.messenger.praktikum.yandex/pull/4)
+[№1](https://github.com/MaryWebDev/middle.messenger.praktikum.yandex/pull/5)
