@@ -60,7 +60,7 @@ class HTTPTransport {
     const { headers = {}, method, data } = options;
 
     return new Promise(function (resolve, reject) {
-      if (!method) {
+      if (method === undefined) {
         reject('No method');
         return;
       }

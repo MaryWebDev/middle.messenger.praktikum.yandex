@@ -18,9 +18,9 @@ export class InputProfile extends Block {
   static componentName = 'InputProfile';
 
   constructor({
-    onChange = () => {},
-    onFocus = () => {},
-    onBlur = () => {},
+    onChange,
+    onFocus,
+    onBlur,
     type = 'text',
     error,
     placeholder,
