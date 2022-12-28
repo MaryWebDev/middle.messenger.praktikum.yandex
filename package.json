@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "npm run build && node ./server.js --no-source-maps",
-    "build": "parcel build src/index.html --no-source-maps --no-cache --public-url ./"
+    "build": "parcel build src/index.html",
+    "start": "npm run build && node server.js"
   },
   "keywords": [],
   "author": "",
