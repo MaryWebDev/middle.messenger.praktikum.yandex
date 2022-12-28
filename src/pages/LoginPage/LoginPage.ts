@@ -23,7 +23,7 @@ export class LoginPage extends Block {
       onLoad: (e: Event) => {
         e.preventDefault();
         const data: Data = {};
-        for (let ref in this.refs) {
+        for (const ref in this.refs) {
           const inputElement = this.refs[ref].children[1] as HTMLInputElement;
           data[ref] = inputElement.value;
           this.validate(inputElement);

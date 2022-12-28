@@ -1,4 +1,4 @@
-import EventBus from './EventBus';
+import EventBus, { Listener } from './EventBus'
 import { nanoid } from 'nanoid';
 import Handlebars from 'handlebars';
 import { ERRORS, REG } from '../constants';
@@ -47,13 +47,14 @@ export default class Block<P extends object = {}> {
 
     this._registerEvents(eventBus);
 
+    // @ts-ignore
     eventBus.emit(Block.EVENTS.INIT, this.props);
   }
 
   _registerEvents(eventBus: EventBus<Events>) {
     eventBus.on(Block.EVENTS.INIT, this.init.bind(this));
-    eventBus.on(Block.EVENTS.FLOW_CDM, this._componentDidMount.bind(this));
-    eventBus.on(Block.EVENTS.FLOW_CDU, this._componentDidUpdate.bind(this));
+    eventBus.on(Block.EVENTS.FLOW_CDM, this._componentDidMount.bind(this) as Listener);
+    eventBus.on(Block.EVENTS.FLOW_CDU, this._componentDidUpdate.bind(this) as Listener);
     eventBus.on(Block.EVENTS.FLOW_RENDER, this._render.bind(this));
   }
 
@@ -67,6 +68,7 @@ export default class Block<P extends object = {}> {
 
   init() {
     this._createResources();
+    // @ts-ignore
     this.eventBus().emit(Block.EVENTS.FLOW_RENDER, this.props);
   }
 
@@ -153,6 +155,7 @@ export default class Block<P extends object = {}> {
 
         // Запускаем обновление компоненты
         // Плохой cloneDeep, в след итерации нужно заставлять добавлять cloneDeep им самим
+        // @ts-ignore
         self.eventBus().emit(Block.EVENTS.FLOW_CDU, { ...target }, target);
         return true;
       },

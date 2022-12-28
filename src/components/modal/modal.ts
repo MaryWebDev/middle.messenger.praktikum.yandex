@@ -1,10 +1,6 @@
 import Block from '../../core/Block';
 import './modal.css';
 
-interface ModalProps {
-  title: string;
-}
-
 export class Modal extends Block {
   static componentName = 'Modal';
 

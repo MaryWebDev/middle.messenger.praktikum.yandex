@@ -17,9 +17,9 @@ export class Input extends Block {
   static componentName = 'Input';
 
   constructor({
-    onChange = () => {},
-    onFocus = () => {},
-    onBlur = () => {},
+    onChange,
+    onFocus,
+    onBlur,
     type = 'text',
     error,
     placeholder,

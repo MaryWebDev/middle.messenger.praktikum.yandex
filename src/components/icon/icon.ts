@@ -1,10 +1,6 @@
 import Block from '../../core/Block';
 import './icon.css';
 
-interface IconProps {
-  name: string;
-}
-
 export class Icon extends Block {
   static componentName = 'Icon';
 
