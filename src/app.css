@@ -1,0 +1,35 @@
+@import './pages/ProfilePage/ProfilePage.css';
+
+:root {
+    --main-color: #999999;
+    --btn-text-color: #FFFFFF;
+    --text-dark-color: #1E1E1E;
+    --text-another-color: #FF2F2F;
+    --basic-theme-color: #3369F3;
+    --line-color: #EAEAEA;
+    --bg-color: #EFEFEF;
+    --bg-color-light: #FBFBFB;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Inter', 'Arial', sans-serif;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
